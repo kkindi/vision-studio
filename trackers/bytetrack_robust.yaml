@@ -1,0 +1,10 @@
+# Tuned ByteTrack for low-FPS / CPU use.
+# Goal: keep a consistent ID on an object even if detection briefly drops,
+# so the same person/car isn't re-counted several times in "Total".
+tracker_type: bytetrack
+track_high_thresh: 0.25   # confidence for the first association pass
+track_low_thresh: 0.1     # confidence for the second (low-score) pass
+new_track_thresh: 0.6     # need fairly high confidence to START a brand-new ID
+track_buffer: 120         # keep a lost track ~120 frames before retiring its ID
+match_thresh: 0.8         # IoU threshold to match a detection to an existing track
+fuse_score: true

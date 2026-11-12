@@ -1,0 +1,33 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Model weights are downloaded on first use (see models/README.md)
+models/*
+!models/README.md
+*.pt
+*.onnx
+*.tflite
+*.mlpackage/
+
+# Your own training data and training output
+datasets/
+runs/
+
+# Build output
+build/
+dist/
+*.spec
+
+# Flutter (mobile/)
+mobile/.dart_tool/
+mobile/build/
+mobile/.flutter-plugins*
+mobile/pubspec.lock
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/

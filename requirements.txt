@@ -1,0 +1,11 @@
+# Vision Studio dependencies (Python 3.10 - 3.13)
+#
+# Install PyTorch first. CPU build (works everywhere):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# NVIDIA GPU: use the command from https://pytorch.org/get-started/locally/
+#
+# Then:  pip install -r requirements.txt
+ultralytics>=8.4.0      # 8.4 is the first release with YOLO26
+PySide6>=6.6.0
+opencv-python>=4.8.0
+psutil>=5.9.0
